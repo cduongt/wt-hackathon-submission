@@ -268,8 +268,8 @@ namespace SiestaCloud
         {
             return new Booking()
             {
-                Arrival = from.ToShortDateString(),
-                Departure = to.ToShortDateString(),
+                Arrival = from.ToString("yyyy-MM-dd"),
+                Departure = to.ToString("yyyy-MM-dd"),
                 GuestInfo = AddGuestInfo(),
                 Rooms = AddRoomAsync(hotel)
             };

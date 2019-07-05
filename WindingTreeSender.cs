@@ -15,7 +15,6 @@ namespace SiestaCloud.WindingTreeConnector
             var request = new RestRequest(Method.POST);
 
             request.AddJsonBody(input);
-            throw new Exception(input + client.BaseUrl);
 
             if (headers != null)
             {
